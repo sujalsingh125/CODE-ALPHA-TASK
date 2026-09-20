@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+<p class="subtitle">
+A simple image gallery built using HTML, CSS and JavaScript.
+</p>
+    <div class="gallery">
+    <img src="../IMAGES/image1.jpg" alt="Image 1" onclick="openLightbox(0)">
+    <img src="../IMAGES/image2.jpg" alt="Image 2" onclick="openLightbox(1)">
+    <img src="../IMAGES/image3.jpg" alt="Image 3" onclick="openLightbox(2)">
+    <img src="../IMAGES/image4.jpg" alt="Image 4" onclick="openLightbox(3)">
+    <img src="../IMAGES/image5.jpg" alt="Image 5" onclick="openLightbox(4)">
+    <img src="../IMAGES/image6.jpg" alt="Image 6" onclick="openLightbox(5)">
+    <img src="../IMAGES/image7.jpg" alt="Image 7" onclick="openLightbox(6)">
+    <img src="../IMAGES/image8.jpg" alt="Image 8" onclick="openLightbox(7)">
+    <img src="../IMAGES/image9.jpg" alt="Image 9" onclick="openLightbox(8)">
+    <img src="../IMAGES/image10.jpg" alt="Image 10" onclick="openLightbox(9)">
+</div>
+
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+
+        <img id="lightbox-img">
+
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
